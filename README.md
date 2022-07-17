@@ -21,12 +21,6 @@ Setup configuration:
 cp .env.example .env
 ```
 
-Generate application key:
-
-```sh
-php artisan key:generate
-```
-
 Create an SQLite database.
 
 ```sh
