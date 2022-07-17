@@ -1,0 +1,13 @@
+type Query {
+    uzytkownik(id: ID): Uzytkownik
+}
+
+type Mutation {
+    createUzytkownik(login: String!, password: String!, password_confirmation: String!): Uzytkownik! @validator
+    updateUzytkownikPassword(id: ID!, password: String!, password_confirmation: String!): Uzytkownik @validator
+}
+
+type Uzytkownik {
+    id: ID!
+    login: String!
+}
